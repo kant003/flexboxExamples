@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: lightblue;
+            width:200px;
+            height: 200px;
+            display: flex; 
+            flex-direction:   /*row(defecto)   row-reverse    column    column-reverse   inherit*/
+            justify-content:   /* flex-start(defecto)   flex-end  center  space-between space-around initial inherit*/
+            align-items:   /* stretch(defecto)  center  flex-start  flex-end  baseline initial  inherit*/
+        }
+        .flex-itemA{
+            background-color: orange;
+        }
+        .flex-itemB{
+            background-color: greenyellow;
+              align-: /* stretch(defecto)  center  flex-start  flex-end  baseline initial  inherit*/
+        }
+        .flex-itemC{
+            background-color: blueviolet;
+            align-self: /* stretch(defecto)  center  flex-start  flex-end  baseline initial  inherit*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>El titulo</h1>
+    <div class="flex-container">
+        <div class="flex-itemA">1</div>
+        <div class="flex-itemB">2</div>
+        <img class="flex-itemC" src="https://picsum.photos/50/50"/>
+    </div>
+    <footer>Esto es el pie</footer>
+</body>

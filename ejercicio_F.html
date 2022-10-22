@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: blueviolet;
+            color: #333;
+        }
+       
+        ul{
+            list-style-type: none;
+        }
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        .navbar{
+            background-color: blue;
+            color:white;
+            height: 60px;
+        }
+        .navbar .logo{
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .navbar .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .navbar ul{
+            display: flex;
+            gap: 10px;
+        }
+        .navbar a:hover{
+            color: lightblue
+        }
+
+        .header{
+            background-color: blue;
+            color: white;
+            min-height: 400px;
+            padding: 30px;
+        }
+        .header h1{
+            font-size: 3rem;
+        }
+        .header img{
+            max-width: 200px;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+   <nav class="navbar">
+    <div class="container">
+        <div class="logo">CEBEM</div>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Alumnos</a>
+            </li>
+            <li>
+                <a href="#">Profesores</a>
+            </li>
+        </ul>
+    </div>
+   </nav>
+   <header class="header">
+    <h1>Desarrollo aplicaciones multiplataformas</h1>
+    <img src="https://cebem.net/images/logos/logo-grafico.png">
+   </header>
+</body>
+
+</html>
